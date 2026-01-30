@@ -74,19 +74,30 @@ Generative Artificial Intelligence has become one of the most discussed areas in
 Generative Artificial Intelligence (Generative AI or GenAI) refers to advanced machine-learning models capable of producing new content such as text, images, audio, video, code, and even 3D assets. Unlike traditional AI systems that classify, predict, or detect, generative models create entirely new data that resembles the patterns of the training dataset.
 
 ### Examples include:
+
 ChatGPT generating human-like text
+
 DALL·E generating images from prompts
+
 Music generation models
+
 Video synthesis systems
+
 Code generation models such as GitHub Copilot
 
 ## Key Idea Behind Generative AI
 At its core, generative AI learns the probability distribution of input data. For example, a model trained on large text corpora learns:
+
 Grammar
+
 Vocabulary
+
 Semantics
+
 Sentence formations
+
 Reasoning patterns
+
 Then, based on learned probabilities, it produces the most likely next word, sentence, or paragraph.
 
 ## How Generative AI Differs from Traditional AI
