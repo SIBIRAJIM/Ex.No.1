@@ -107,48 +107,77 @@ Then, based on learned probabilities, it produces the most likely next word, sen
 
 ### Generative AI uses the following core elements:
 a) Deep Learning
+
 Neural networks with multiple layers extract complex patterns from large datasets.
+
 b) Representation Learning
+
 Models learn to convert raw data into numerical vectors (embeddings).
+
 c) Probability Modelling
+
 Models predict the distribution of possible outputs.
+
 d) Self-Supervision
+
 LLMs are trained without manual labels. Example: Mask 10% of words → model predicts the missing words.
+
 e) Large-Scale Computing
 
 ### Training uses:
 
 Hundreds of GPU clusters
+
 Distributed training
+
 Trillion-token datasets
 
 ## Types of Generative Models
 ### Generative AI consists of multiple architectures:
 i) Autoregressive Models
+
 Predict the next token based on previous tokens. Example: GPT-series, LLaMA.
+
 ii) Autoencoders (AEs & VAEs)
+
 Compress and reconstruct data. Used in: Image denoising, latent-space generation.
+
 iii) Generative Adversarial Networks (GANs)
 ### Two neural networks:
 Generator
+
 Discriminator Used for realistic image generation, deepfakes.
+
 iv) Diffusion Models
+
 Generate images by iteratively removing noise. Used in: DALL·E 3, Midjourney.
+
 v) Sequence-to-Sequence Models
+
 Encoder-decoder models used in: Translation, summarization.
 
 ## Core Tasks Enabled by Generative AI
+
 Text generation
+
 Image synthesis
+
 Audio/music composition
+
 Code generation
+
 Scientific research (protein folding predictions)
+
 Creative design
 
 ## Why Generative AI Became Popular
+
 Massive datasets
+
 Transformer invention (revolutionized scalability)
+
 GPU acceleration
+
 Availability of open-source LLMs
 
 # GENERATIVE AI ARCHITECTURES (TRANSFORMERS & OTHERS)
@@ -158,232 +187,446 @@ Availability of open-source LLMs
 Transformers are the backbone of modern generative AI. Proposed by Vaswani et al. in the paper “Attention Is All You Need”, it replaced traditional RNNs and LSTMs.
 
 ## Why Transformers?
+
 Parallel processing (faster training)
+
 Handles long-range dependencies
+
 Scalable to billions of parameters
+
 Efficient attention mechanisms
+
 <img width="673" height="422" alt="image" src="https://github.com/user-attachments/assets/959994b4-3f0d-4a76-9a50-f412a4a8ecdc" />
 
 ## Components of a Transformer
+
 i) Embedding Layer
+
 Converts words/tokens into vectors.
+
 ii) Positional Encoding
+
 Adds sequence information since transformers do not process tokens in order.
+
 iii) Encoder Block
+
 #### Contains:
+
 Multi-head self-attention
+
 Feedforward layers
+
 Layer normalization
+
 iv) Decoder Block
+
 #### Adds:
+
 Masked self-attention
+
 Encoder-decoder attention
+
 v) Attention Mechanism
+
 Attention helps identify which part of the input is important for generating output.
+
 <img width="765" height="756" alt="image" src="https://github.com/user-attachments/assets/0c19e09a-3e44-47f0-a2f1-3bd4f486e300" />
+
 ### Formula:
+
 <img width="501" height="112" alt="image" src="https://github.com/user-attachments/assets/f2b287a1-fa89-486b-8f3c-faab7cd6497a" />
 
 ## Types of Transformer-Based LLMs
+
 <img width="615" height="148" alt="image" src="https://github.com/user-attachments/assets/5784352d-1400-484d-8d62-b7e664e0c31e" />
 
 ## Other Generative Architectures
+
 a) GANs
+
 Used for realistic images and deepfakes
+
 Generator vs. Discriminator structure
+
 b) VAEs
+
 Used for latent-space generation
+
 c) Diffusion Models
+
 Currently most popular for image generation
+
 Add noise → learn to remove noise
 
 # GENERATIVE AI ARCHITECTURE AND APPLICATIONS
+
 <img width="759" height="562" alt="image" src="https://github.com/user-attachments/assets/5ecc27e6-cc0e-4ed0-89a5-0144c3ef0e4e" />
+
 GenerativeAI use cases
+
 VisualContent
+
 AudioGeneration
+
 CodeGeneration
+
 TextGeneration
+
 ImageEnhancement
+
 VideoPrediction
+
 3D shapeGeneration
+
 MusicComposing
+
 TTSGenerator
+
 STSConversion
+
 Chatbots
+
 Code compilation
+
 CreativeWriting 
+
 TranslationBug 
+
 FixingLeewayHertz
 
 ## Major Applications of Generative AI
+
 ## 1. Text Generation & NLP
+
 Chatbots
+
 Email writing
+
 Story generation
+
 Exam preparation
+
 Resume writing
+
 ## 2. Image & Video Generation
+
 Product design
+
 Movie scene generation
+
 Animation
+
+
 Virtual try-on systems
+
 Deepfake detection
+
 ## 3. Healthcare
+
 Drug discovery
+
 Protein structure prediction
+
 Medical image enhancement
+
 ## 4. Software Development
+
 Code auto-completion
+
 Bug detection
+
 Documenting code
+
 ## 5. Education
+
 Automatic lesson planning
+
 Personalized learning
+
 On-demand tutoring
+
 ## 6. Business & Analytics
+
 Report generation
+
 Market forecasting
+
 Process automation
+
 ## 7. Robotics
+
 AI agents generating navigation paths
+
 Vision-based control
+
 ## Example Generative AI Systems
+
 <img width="391" height="218" alt="image" src="https://github.com/user-attachments/assets/a08de0a7-636a-4ce4-a64e-c8079885052d" />
 
 # IMPACT OF SCALING IN LLMs
+
 ## BEFORE AND AFTER OPEN AI
+
 <img width="766" height="475" alt="image" src="https://github.com/user-attachments/assets/1a2f1409-025c-4be4-85a4-b690b894a42b" />
 
 ## OVERALL OUTCOME
+
 <img width="790" height="422" alt="image" src="https://github.com/user-attachments/assets/7e4bf84b-662c-4b2f-84d2-1385d1a3cbc9" />
 
 ### What Is Scaling?
 #### Scaling refers to increasing:
+
 Model parameters
+
 Training data size
+
 Compute power
+
 #### Scaling laws discovered by OpenAI show that:
+
 Performance improves continuously as models grow larger.
+
 ### Scaling Dimensions
+
 a) Parameter Scaling
+
 From millions → billions → trillions Example: GPT-3 has 175B parameters.
+
 b) Data Scaling
+
 More data → better generalization Training data now reaches trillions of tokens.
+
 c) Compute Scaling
+
 More GPUs → faster and better training.
+
 ### Effects of Scaling
+
 Improved reasoning
+
 Better language understanding
+
 Higher creativity
+
 Less need for fine-tuning
+
 Emergent abilities (new skills appear automatically)
+
 Few-shot learning
+
 Tool usage
+
 Translation without training
+
 ### Challenges of Scaling
+
 Computational cost
+
 Carbon footprint
+
 Data bias
+
 Hallucination
+
 Security risks
+
 ### Future of Scaling
+
 Models are shifting from brute-force scaling → smarter scaling:
+
 Mixture-of-Experts (MoE)
+
 Efficient training algorithms
+
 Modular architectures
+
 ## WHAT IS AN LLM AND HOW IT IS BUILT
-<img width="1292" height="677" alt="image" src="https://github.com/user-attachments/assets/b5f3ab08-4333-484d-979f-75be1a9f6a07" />
+
+<img width="1292" height="677" alt="image" src="https://github.com/user-
+attachments/assets/b5f3ab08-4333-484d-979f-75be1a9f6a07" />
+
 ### What Is an LLM?
-A Large Language Model (LLM) is a transformer-based neural network trained on massive text datasets to understand and generate human-like language.
+
+A Large Language Model (LLM) is a transformer-based neural network trained on massive text 
+datasets to understand and generate human-like language.
+
 ### Key Features of LLMs
+
 Understand context
+
 Perform reasoning
+
 Generate long text
+
 Translate languages
+
 Answer questions
+
 Write code
+
 ### How an LLM Is Built
+
 #### Step 1: Data Collection
+
 Sources:
+
 Books
+
 Wikipedia
+
 Scientific articles
+
 Websites
+
 Code repositories
+
 Data is cleaned for:
+
 Duplicates
+
 Harmful content
+
 Formatting
+
 #### Step 2: Tokenization
+
 Text is broken into units called tokens. Example: “Artificial Intelligence” → ["Artificial","Intelligence"]
+
 Modern LLMs use:
+
 Byte Pair Encoding (BPE)
+
 WordPiece
+
 SentencePiece
+
 #### Step 3: Model Architecture Setup
+
 Choose:
+
 Number of layers
+
 Number of attention heads
+
 Hidden dimension
+
 Parameter count
+
 Example GPT-3:
+
 96 layers
+
 12288 hidden size
+
 96 attention heads
+
 #### Step 4: Training (Self-Supervised)
+
 The model predicts the next token for billions of sentences. This phase uses:
+
 Tens of thousands of GPUs
+
 Distributed training
+
 #### Step 5: Fine-Tuning
+
 Model is adapted for specific tasks:
+
 Medical
+
 Legal
+
 Programming
+
 Chat-based conversation
+
 #### Step 6: RLHF (Reinforcement Learning from Human Feedback)
+
 Human reviewers rate responses. The model learns to output:
+
 Safe
+
 Helpful
+
 Non-toxic
+
 Aligned answers
+
 #### Step 7: Deployment
+
 Models are deployed via:
+
 APIs
+
 Chat applications
+
 Cloud services
+
 ## Summary
+
 This report covered a complete understanding of Generative AI:
+
 Foundational Concepts
+
 Probability learning
+
 Deep neural networks
+
 Self-supervision
+
 Generative AI Architectures
+
 Transformers
+
 GANs
+
 VAEs
+
 Diffusion models
+
 Applications
+
 Text, image, video
+
 Healthcare, coding, education
+
 Impact of Scaling in LLMs
+
 Scaling laws
+
 Emergent abilities
+
 Challenges
+
 How LLMs Are Built
+
 Data → Tokenization → Training → Fine-tuning → RLHF → Deployment
+
 ## Final Conclusion
 Generative AI and Large Language Models represent a major leap in artificial intelligence. With the transformer revolution, scaling laws, and advanced training techniques, these models can now perform tasks previously believed impossible for machines.
+
 As AI continues to evolve, future models will become:
+
 More efficient
+
 More knowledgeable
+
 More aligned with human needs
+
 Generative AI is not just a technological innovation— It is the foundation for the next era of intelligent systems.
+
 ### References
+
 1. Vaswani et al. (2017) – Attention Is All You Need.
+
 2. OpenAI Research Blog.
+
 3. Google AI Research – BERT.
+
 4. Goodfellow et al. (2014) – Generative Adversarial Nets.
+
 5. Stability AI – Stable Diffusion Documentation.
+
 # Result
+
 Generative AI enables machines to create new content using models like GANs, VAEs, and Diffusion.Among LLMs, GPT-4 outperforms GPT-3 with higher accuracy, multimodal capability, and longer context handling.Overall, Generative AI is revolutionizing industries with advanced creativity, reasoning, and problem-solving power.
